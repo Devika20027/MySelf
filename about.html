@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Myself</title>
+    <meta name="author" content="Devika Vamadevan">
+    <meta name="description" content="About Devika Vamadevan, a classical dancer and Montessori trainee.">
+    <title>About Devika Vamadevan</title>
     <link rel="stylesheet" href="about.css">
+    <script>
+        function showAlert() {
+            alert("Hello, welcome to my page!");
+        }
+
+        function changeBgColor() {
+            document.body.style.backgroundColor = "#eff4fd";
+        }
+
+        function resetBgColor() {
+            document.body.style.backgroundColor = "#f0f8ff";
+        }
+    </script>
 </head>
 <body>
     <section class="main-page">
@@ -25,11 +40,14 @@
                 <br>Details and my interests
             </p>
             <a href="DEVIKA VAMADEVAN-CV-1 (1) (2).pdf">CLICK TO SEE RESUME</a>
+            <button onclick="showAlert()">Click Me</button>
         </div>
         <div class="images">
-            <img src="background.png" class="shape">
-            <img src="me_new.png" class="me">
+            <a href="https://www.linkedin.com/in/devika-vamadevan-225716207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src="me_new.png" class="me" alt="Devika Vamadevan" onmouseover="changeBgColor()" onmouseout="resetBgColor()">
+            </a>
         </div>
+        <!-- <button onclick="showAlert()">Click Me</button> -->
     </section>
     <section class="info-section">
         <!-- First part -->
@@ -64,6 +82,57 @@
             </div>
         </div>
     </section>
+    <section class="bucket-list">
+        <h2>My Bucket List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Visit Japan</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Learn a new language</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Skydiving</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Write a book</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Run a marathon</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="media">
+        <div class="media-body">
 
+            <h2>Media Embedding</h2>
+            <h3>Favourite Movie Clip</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7mqBszb1LpY" frameborder="0" allowfullscreen></iframe>
+            <h3>Favourite Song</h3>
+            <audio controls>
+                <source src="your_favorite_song.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
 </body>
 </html>
